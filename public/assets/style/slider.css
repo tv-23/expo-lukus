@@ -170,9 +170,13 @@ html {
     width: 70px;
 }
 
-@media (max-width: 480px) { 
-    .frame-box{
+@media (max-width: 480px) {
+    .frame-box {
         width: calc(100%*0.9);
         height: calc(600px*0.9);
+    }
+
+    .main-title {
+        font-size: 75px;
     }
 }
