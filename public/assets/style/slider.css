@@ -68,8 +68,8 @@ html {
 
 .frame-box {
     position: relative;
-    width: 450px;
-    height: 550px;
+    width: 500px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,7 +88,7 @@ html {
 
 .painting-line {
     stroke: var(--primary);
-    stroke-width: 15px;
+    stroke-width: 20px;
     stroke-linecap: square;
     stroke-linejoin: miter;
     stroke-dasharray: 1200;
@@ -168,4 +168,11 @@ html {
 .dot.active {
     background: var(--white);
     width: 70px;
+}
+
+@media (max-width: 480px) { 
+    .frame-box{
+        width: calc(100%*0.9);
+        height: calc(600px*0.9);
+    }
 }

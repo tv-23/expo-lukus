@@ -64,7 +64,7 @@ import "../../../public/assets/style/slider.css";
     let currentIndex = 0;
     let isAnimating = false;
     let autoPlayTimer;
-    const slideDuration = 4000; // Total time per slide (includes slow animation)
+    const slideDuration = 8000; // Total time per slide (includes slow animation)
 
     const strokeWidth = 7.5;
     const W = 450 - strokeWidth;
@@ -217,6 +217,6 @@ import "../../../public/assets/style/slider.css";
             delay: 0.42,
         });
     };
-    startTimer();
+    resetTimer();
 });
 </script>
