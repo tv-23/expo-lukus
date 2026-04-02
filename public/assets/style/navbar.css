@@ -56,7 +56,7 @@ header {
 }
 
 .nav-item {
-    padding: 12px 30px;
+    padding: 12px 28px;
     cursor: pointer;
     font-size: 13px;
     font-weight: 700;
@@ -64,6 +64,12 @@ header {
     letter-spacing: 1.5px;
     white-space: nowrap;
     color: var(--black);
+}
+
+.nav-item  a{
+    color: var(--black);
+text-decoration: none;
+padding: 0;
 }
 
 /* This creates the space for the logo in the middle of the list */
@@ -118,11 +124,12 @@ header {
     color: var(--black);
     transition: opacity 0.3s ease, transform 0.3s ease;
     z-index: 5;
+    font-family: var(--font-main);
 }
 
 /* Hover or Active state: Bright white */
-.nav-item:hover,
-.nav-item.active {
+.nav-item:hover a,
+.nav-item.active a {
     color: var(--white);
     font-weight: 800;
 }
@@ -330,6 +337,7 @@ header {
     cursor: pointer;
     opacity: 0.7;
     transition: 0.2s ease;
+    text-decoration: none;
     border-radius: 999px;
 }
 
