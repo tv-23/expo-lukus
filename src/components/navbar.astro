@@ -1,0 +1,225 @@
+---
+import "../../public/assets/style/navbar.css";
+---
+
+<svg class="svg-filters">
+    <defs>
+        <filter id="gooey-filter">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"
+            ></feGaussianBlur>
+            <feColorMatrix
+                in="blur"
+                mode="matrix"
+                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+                result="goo"></feColorMatrix>
+        </filter>
+    </defs>
+</svg>
+
+<header id="expo-lukus-header">
+    <!-- Centered Logo -->
+    <div class="logo">
+        <a href="/">
+
+            <img src="/public/assets/images/logo expo.svg" alt="Expo Lukus" />
+        </a>
+    </div>
+
+    <!-- Desktop Nav with Spacer -->
+    <div class="desktop-nav" id="desktopNav">
+        <div class="goo-wrapper">
+             <div class="pill" id="activePill" style="height:100%;"></div>
+            <div class="pill" id="desktopPill" style="height:100%;"></div>
+        </div>
+
+        <ul class="nav-list white-layer">
+            <li class="nav-item active">Home</li>
+            <li class="nav-item">About Us</li>
+            <li class="nav-spacer"></li>
+            <li class="nav-item">Products</li>
+            <li class="nav-item">Contact Us</li>
+        </ul>
+
+        <div class="black-mask" id="desktopMask">
+            <ul class="nav-list">
+                <li class="nav-item active">Home</li>
+                <li class="nav-item">About Us</li>
+                <li class="nav-spacer"></li>
+                <li class="nav-item">Products</li>
+                <li class="nav-item">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Burger Icon -->
+    <div class="burger" id="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</header>
+
+<!-- Mobile Overlay -->
+<div class="mobile-overlay" id="mobileOverlay">
+    <div class="desktop-nav" id="mobileNav" style="display: block;">
+        <div class="goo-wrapper">
+            <div class="pill" id="mobilePill" style="width: 100%;"></div>
+        </div>
+        <ul class="nav-list white-layer">
+            <li class="nav-item active">Home</li>
+            <li class="nav-item">About Us</li>
+            <li class="nav-item">Products</li>
+            <li class="nav-item">Contact Us</li>
+        </ul>
+        <div class="black-mask" id="mobileMask">
+            <ul class="nav-list">
+                <li class="nav-item active">Home</li>
+                <li class="nav-item">About Us</li>
+                <li class="nav-item">Products</li>
+                <li class="nav-item">Contact Us</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    /**
+     * --- DESKTOP LOGIC ---
+     * One pill stays on Active, another stretches to follow Hover.
+     */
+    const dPillActive = document.getElementById("activePill");
+    const dPillHover = document.getElementById("desktopPill");
+    const dItems = document.querySelectorAll("#desktopNav .nav-item");
+    const dContainer = document.getElementById("desktopNav");
+    
+    // Find the item that has the "active" class
+    const dActiveItem = document.querySelector("#desktopNav .nav-item.active") || dItems[0];
+
+    function initDesktop() {
+        if (!dActiveItem) return;
+        
+        const rect = dActiveItem.getBoundingClientRect();
+        const contRect = dContainer.getBoundingClientRect();
+        const x = rect.left - contRect.left;
+        const w = rect.width;
+
+        // Position the static Active Pill
+        gsap.set(dPillActive, { 
+            left: x, 
+            width: w, 
+            opacity: 1 
+        });
+
+        // Ensure Hover Pill starts at the Active position but is invisible
+        gsap.set(dPillHover, { 
+            left: x, 
+            width: w, 
+            opacity: 0 
+        });
+    }
+
+    function moveHoverPill(target) {
+        const rect = target.getBoundingClientRect();
+        const contRect = dContainer.getBoundingClientRect();
+        const x = rect.left - contRect.left;
+        const w = rect.width;
+
+        // 1. Move Hover Pill to target
+        gsap.to(dPillHover, { 
+            left: x, 
+            width: w, 
+            opacity: 1,
+            duration: 0.7, 
+            ease: "elastic.out(1, 0.75)",
+            overwrite: true
+        });
+        
+        // 2. Liquid Stretch Effect (The "Wow" factor)
+        gsap.fromTo(dPillHover, 
+            { scaleX: 1.5 }, 
+            { scaleX: 1, duration: 0.9, ease: "elastic.out(1, 0.75)" }
+        );
+    }
+
+    // Event Listeners for Desktop
+    dItems.forEach((item) => {
+        item.addEventListener("mouseenter", () => moveHoverPill(item));
+    });
+
+    // Hide the hover pill when leaving the navigation area
+    dContainer.addEventListener("mouseleave", () => {
+        gsap.to(dPillHover, { 
+            opacity: 0, 
+            duration: 0.4,
+            ease: "power2.out" 
+        });
+    });
+
+
+    /**
+     * --- MOBILE LOGIC ---
+     * Burger Menu + Vertical Snapping Pill
+     */
+    const burger = document.getElementById("burger");
+    const overlay = document.getElementById("mobileOverlay");
+    const mPill = document.getElementById("mobilePill");
+    const mItems = document.querySelectorAll("#mobileNav .nav-item");
+    const mContainer = document.getElementById("mobileNav");
+    const lines = document.querySelectorAll('.line');
+    let isOpen = false;
+
+    burger.addEventListener("click", () => {
+        isOpen = !isOpen;
+        
+        // 1. Reveal Overlay
+        gsap.to(overlay, {
+            clipPath: isOpen ? "circle(150% at 90% 5%)" : "circle(0% at 90% 5%)",
+            duration: 1,
+            ease: "expo.inOut",
+        });
+
+        // 2. Animate Burger Lines
+        gsap.to(lines[0], { rotate: isOpen ? 45 : 0, y: isOpen ? 7 : 0, duration: 0.3 });
+        gsap.to(lines[1], { opacity: isOpen ? 0 : 1, duration: 0.3 });
+        gsap.to(lines[2], { rotate: isOpen ? -45 : 0, y: isOpen ? -8 : 0, duration: 0.3 });
+
+        // 3. Snap pill to active item on open
+        if (isOpen) {
+            const mActive = document.querySelector("#mobileNav .nav-item.active") || mItems[0];
+            setTimeout(() => movePillMobile(mActive, false), 400);
+        }
+    });
+
+    function movePillMobile(target, animate = true) {
+        const rect = target.getBoundingClientRect();
+        const contRect = mContainer.getBoundingClientRect();
+        const y = rect.top - contRect.top;
+        const h = rect.height;
+
+        gsap.to(mPill, {
+            top: y,
+            height: h,
+            opacity: 1,
+            duration: animate ? 0.8 : 0,
+            ease: "elastic.out(1, 0.75)",
+        });
+
+        if (animate) {
+            gsap.fromTo(mPill, { scaleY: 1.6 }, { scaleY: 1, duration: 1, ease: "elastic.out(1, 0.75)" });
+        }
+    }
+
+    mItems.forEach((item) => {
+        // Handle both click and touch for mobile
+        const handleInteraction = (e) => {
+            movePillMobile(item);
+        };
+        item.addEventListener("click", handleInteraction);
+        item.addEventListener("touchstart", handleInteraction);
+    });
+
+    // Run Initialization on Load
+    window.addEventListener("load", () => {
+        initDesktop();
+    });
+</script>
