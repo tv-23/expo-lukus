@@ -21,6 +21,10 @@ export const ui = {
     // Products Grid
     'products.headline': 'The Global<br>Fruit Selection',
     'products.text': "Premium fruits sourced from Morocco and delivered to international markets with export excellence.",
+    'products.filter.fresh-herbs': 'Dried Fruits',
+    'products.filter.fresh-vegetables': 'Fresh Vegetables',
+    'products.filter.fresh-fruits': 'Fresh Fruits',
+    'products.filter.all': 'All Produce',
   },
   es: {
     // Navigation
@@ -36,5 +40,9 @@ export const ui = {
     // Products Grid
     'products.headline': 'La Selección Global<br>de Frutas',
     'products.text': 'Frutas premium procedentes de Marruecos y entregadas a mercados internacionales con excelencia en la exportación.',
+    'products.filter.fresh-herbs': 'Frutas Deshidratadas',
+    'products.filter.fresh-vegetables': 'Verduras Frescas',
+    'products.filter.fresh-fruits': 'Frutas Frescas',
+    'products.filter.all': 'Todos los Productos',
   },
 } as const;
