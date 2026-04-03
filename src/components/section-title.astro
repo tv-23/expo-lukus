@@ -6,6 +6,8 @@ const { title } = Astro.props;
 <section class="section-title">
     <div class="mask-wrap">
         <h2 class="expo-lukus-title" set:html={title} />
+        <br>
+        <p  class="expo-lukus-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem voluptate aliquid porro dolore quibusdam explicabo optio, commodi aut magni.</p>
     </div>
 </section>
 
@@ -13,7 +15,7 @@ const { title } = Astro.props;
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.utils.toArray(".section-title").forEach((section) => {
-        const title = section.querySelector(".expo-lukus-title");
+        const title = section.querySelectorAll(".expo-lukus-title");
 
         gsap.from(title, {
             y: 200,
