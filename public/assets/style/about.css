@@ -8,7 +8,7 @@
   }
 
   .about-content-inner {
-      height: 100vh;
+      height: min-content;
       width: 100%;
       display: flex;
       flex-direction: column;
