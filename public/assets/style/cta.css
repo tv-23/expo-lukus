@@ -1,7 +1,7 @@
 .cta-section {
     position: relative;
     padding: 150px 0;
-    background: var(--white);
+    background: var(--primary);
     transition: background 1s ease;
     overflow: hidden;
     display: flex;
@@ -142,9 +142,9 @@
     background: var(--primary) !important;
 }
 
-.dark-vibe .cta-text {
+/* .dark-vibe .cta-text {
     color: white;
-}
+} */
 
 
 .dark-vibe .cta-form-wrap {

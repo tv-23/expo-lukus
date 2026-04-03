@@ -1,13 +1,14 @@
 ---
 import "../../public/assets/style/section-title.css";
 const { title } = Astro.props;
+const subtitle = Astro.props.subtitle || "";
 ---
 
 <section class="section-title">
     <div class="mask-wrap">
         <h2 class="expo-lukus-title" set:html={title} />
         <br>
-        <p  class="expo-lukus-title">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem voluptate aliquid porro dolore quibusdam explicabo optio, commodi aut magni.</p>
+        <p  class="expo-lukus-title">{subtitle}</p>
     </div>
 </section>
 
