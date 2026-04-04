@@ -9,25 +9,26 @@ import PageHeadline from "../../../components/page-headline.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+const prefix = lang === "es" ? "" : "/en";
+const href = (path: string) => `${prefix}${path}`;
 const { id } = Astro.params;
 
 const product = productDetails[id];
 
 export async function getStaticPaths() {
-    const products = 
-[
-  "mint",
-  "coriander",
-  "parsley",
-  "potato",
-  "tomato",
-  "onion",
-  "blueberry",
-  "strawberry",
-  "avocado",
-  "raspberry",
-  "blackberry"
-];
+    const products = [
+        "mint",
+        "coriander",
+        "parsley",
+        "potato",
+        "tomato",
+        "onion",
+        "blueberry",
+        "strawberry",
+        "avocado",
+        "raspberry",
+        "blackberry",
+    ];
     const langs = ["en", "es"];
 
     return langs.flatMap((lang) =>
@@ -54,9 +55,9 @@ export async function getStaticPaths() {
     <PageHeadline
         title={`<h1 class="main-title">${product.headline.title[lang]}</h1>
   <p class="tagline">${product.headline.subtitle[lang]}</p>`}
-  image={product.backgroundimage}
+        image={product.backgroundimage}
     />
-    
-    <ProductDetail product={product} lang={lang} />
+
+    <ProductDetail product={product} lang={lang} href={href} />
     <Footer lang={lang} t={t} />
 </Layout>

@@ -12,7 +12,7 @@ export const products = [
             en: "Exported fresh with natural aroma preserved.",
             es: "Exportado fresco con aroma natural preservado.",
         },
-        origin: "India",
+        origin: "Morocco",
     },
 
     {
@@ -28,7 +28,7 @@ export const products = [
             en: "High-quality coriander exported for global markets.",
             es: "Cilantro de alta calidad exportado para mercados globales.",
         },
-        origin: "India",
+        origin: "Morocco",
     },
 
     {
@@ -44,7 +44,7 @@ export const products = [
             en: "Fresh parsley supplied with premium care.",
             es: "Perejil fresco suministrado con cuidado premium.",
         },
-        origin: "India",
+        origin: "Morocco",
     },
 
     {
@@ -60,7 +60,7 @@ export const products = [
             en: "Export-grade potatoes selected and shipped.",
             es: "Patatas de exportación seleccionadas y enviadas.",
         },
-        origin: "India",
+        origin: "Morocco",
     },
 
     {
@@ -108,7 +108,7 @@ export const products = [
             en: "High-quality blueberries with freshness preserved.",
             es: "Arándanos de alta calidad con frescura preservada.",
         },
-        origin: "USA",
+        origin: "Spain",
     },
 
     {
@@ -140,7 +140,7 @@ export const products = [
             en: "Ripe avocados exported worldwide.",
             es: "Aguacates maduros exportados a todo el mundo.",
         },
-        origin: "Mexico",
+        origin: "Morocco",
     },
     {
         id: "raspberry",

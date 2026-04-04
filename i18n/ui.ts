@@ -13,6 +13,7 @@ export const ui = {
     'nav.about': 'About Us',
     'nav.products': 'Products',
     'nav.contact': 'Contact Us',
+    'nav.cta': 'Request a quote',
     // About Section
     'about.headline': {
       'p1': "About", 'p2': "Us",
@@ -188,6 +189,7 @@ export const ui = {
     'nav.about': 'Sobre Nosotros',
     'nav.products': 'Productos',
     'nav.contact': 'Contáctanos',
+    'nav.cta': 'Solicitud de presupuesto',
     // About Section
     'about.headline': {
       'p1': "Sobre", 'p2': "Nosotros",

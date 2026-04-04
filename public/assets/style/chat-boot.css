@@ -442,7 +442,7 @@
  }
 
  a#chat-button{
-  background-color: var(--secondary);
+  background-color: var(--primary);
 				color: var(--white);
 				width: 40px;
 				height: 40px;
@@ -450,7 +450,7 @@
  }
 
  a#chat-button:hover i {
-    color: var(--primary);
+    color: var(--secondary);
 }
 .chat-form {
   background: var(--soft-gray);
