@@ -7,8 +7,8 @@ import PageHeadline from "../components/page-headline.astro";
 
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 
-// const lang = getLangFromUrl(Astro.url);
-// const t = useTranslations(lang);
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <Layout>
@@ -21,12 +21,12 @@ import { getLangFromUrl, useTranslations } from "../../i18n/utils";
         is:inline
         src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
     ></script>
-    <!-- <Navbar lang={lang} t={t} /> -->
+    <Navbar lang={lang} t={t} />
 
     <PageHeadline
         title='<h1 class="main-title">PURE<br>SELECTION.</h1><p class="tagline">Positions Expo Lukus not as a "mass wholesaler," but as a curated boutique where only the best fruit makes the cut.</p>'
     />
     <br /><br />
 
-    <ProductsDisplay />
+    <!-- <ProductsDisplay /> -->
 </Layout>
