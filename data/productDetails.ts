@@ -9,6 +9,7 @@ export const productDetails = {
       es: "Frutas Deshidratadas",
     },
     image: "/assets/images/products/mint.png",
+    backgroundimage: "/assets/images/products/background/Menta.jpg",
     description: {
       en: "Expo Lukus exports fresh mint in different export-grade packaging options: 100 g (bundle – 50 pieces), 80 g (bundle – variable pieces), and 70 g (65–100 pieces), ensuring flexibility while maintaining freshness and high quality for international markets.",
       es: "Expo Lukus exporta menta fresca en diferentes opciones de embalaje de calidad de exportación: 100 g (manojo – 50 piezas), 80 g (manojo – piezas variables) y 70 g (65–100 piezas), garantizando flexibilidad mientras mantiene la frescura y alta calidad para los mercados internacionales.",
@@ -57,6 +58,7 @@ export const productDetails = {
       en: "Dried Fruits",
       es: "Frutas Deshidratadas",
     },
+    backgroundimage: "/assets/images/products/background/Cilantro.webp",
     image: "/assets/images/products/Coriander.png",
     description: {
       en: "Expo Lukus exports fresh coriander with standardized packaging options: 100 g (50 pieces) and 1500 g / 40 pieces, ensuring consistent quality and freshness for international markets.",
@@ -100,6 +102,7 @@ export const productDetails = {
       es: "Frutas Deshidratadas",
     },
     image: "/assets/images/products/Parsley.webp",
+    backgroundimage: "/assets/images/products/background/Parsley.jpg",
     description: {
       en: "Expo Lukus exports fresh parsley with export-grade packaging in two formats: 100 g (50 pieces) and 1500 g / 40 pieces, carefully packed to maintain freshness and quality during transport.",
       es: "Expo Lukus exporta perejil fresco con embalaje de calidad de exportación en dos formatos: 100 g (50 piezas) y 1500 g / 40 piezas, cuidadosamente empaquetado para mantener la frescura y calidad durante el transporte.",

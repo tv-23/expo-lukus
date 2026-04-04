@@ -41,6 +41,7 @@ export async function getStaticPaths() {
     <PageHeadline
         title={`<h1 class="main-title">${product.headline.title[lang]}</h1>
   <p class="tagline">${product.headline.subtitle[lang]}</p>`}
+  image={product.backgroundimage}
     />
     
     <ProductDetail product={product} lang={lang} />

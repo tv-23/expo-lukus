@@ -58,7 +58,7 @@ export const ui = {
       },
 
       copyright:
-        '© <span class="tt-copyright-year">2026 Expo Luku <br /> Tous droits réservés. Créé & développé par <a href="https://brosmedia.ma/" target="_blank">BrosmediaAAA</a >.</span>',
+        '© <span class="tt-copyright-year">2026 Expo Luku <br /> Tous droits réservés. Créé & développé par <a href="https://brosmedia.ma/" target="_blank">Brosmedia</a >.</span>',
       tagline: "From Earth to the World",
 
       links: {
