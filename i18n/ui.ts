@@ -28,6 +28,7 @@ export const ui = {
     // Certifications
     'certifications.headline': 'Certifications',
     'certifications.text': "International Quality Standards",
+    // CTA
     'cta': {
       tag: "Partnership",
       title: "Ready to grow<br>your <i>harvest</i>?",
@@ -39,6 +40,35 @@ export const ui = {
         email: "Business Email",
         message: "Tell us about your needs...",
         submit: "Submit Inquiry",
+      },
+    },
+    // Footer
+    "footer": {
+      description:
+        "The direct bridge between Moroccan soil and the global stage. We curate nature’s finest produce with a commitment to cold-chain excellence and family heritage.",
+
+      explore: "Explore",
+      moroccoHub: "Morocco Hub",
+      spainHub: "Spain Hub",
+      legal: "Legal",
+
+      hub: {
+        sourcing: "Sourcing & Packaging",
+        logistics: "Logistics & Distribution",
+      },
+
+      copyright:
+        '© <span class="tt-copyright-year">2026 Expo Luku <br /> Tous droits réservés. Créé & développé par <a href="https://brosmedia.ma/" target="_blank">BrosmediaAAA</a >.</span>',
+      tagline: "From Earth to the World",
+
+      links: {
+        home: "Home",
+        about: "About Us",
+        products: "Products",
+        contact: "Contact",
+        privacy: "Privacy Policy",
+        terms: "Terms of Service",
+        licenses: "Export Licenses",
       },
     },
   },
@@ -63,6 +93,7 @@ export const ui = {
     // Certifications
     'certifications.headline': 'Certificaciones',
     'certifications.text': "Estándares Internacionales de Calidad",
+    // CTA
     'cta': {
       tag: "Asociación",
       title: "¿Listo para hacer crecer<br>tu <i>cosecha</i>?",
@@ -74,6 +105,35 @@ export const ui = {
         email: "Correo empresarial",
         message: "Cuéntanos tus necesidades...",
         submit: "Enviar consulta",
+      },
+    },
+    // Footer
+    "footer": {
+      description:
+        "El puente directo entre el suelo marroquí y el escenario global. Seleccionamos los mejores productos de la naturaleza con un compromiso de excelencia en cadena de frío y herencia familiar.",
+
+      explore: "Explorar",
+      moroccoHub: "Centro Marruecos",
+      spainHub: "Centro España",
+      legal: "Legal",
+
+      hub: {
+        sourcing: "Abastecimiento y Embalaje",
+        logistics: "Logística y Distribución",
+      },
+
+      copyright:
+        '© <span class="tt-copyright-year">2026 Expo Luku <br /> Todos los derechos reservados. Creado y desarrollado por <a href="https://brosmedia.ma/" target="_blank">Brosmedia</a>.</span>',
+      tagline: "De la Tierra al Mundo",
+
+      links: {
+        home: "Inicio",
+        about: "Sobre Nosotros",
+        products: "Productos",
+        contact: "Contacto",
+        privacy: "Política de Privacidad",
+        terms: "Términos de Servicio",
+        licenses: "Licencias de Exportación",
       },
     },
   },

@@ -146,7 +146,7 @@
 }
 
 span.tt-copyright-year a:hover {
-    color: var(--primary);
+    color: var(--primary) !important;
 }
 /* --- MOBILE --- */
 @media (max-width: 1024px) {
