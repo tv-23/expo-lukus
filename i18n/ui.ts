@@ -130,7 +130,7 @@ export const ui = {
     },
     // Contact Page
     "contact": {
-    headline: '<h1 class="main-title">ROOTED.<br>GLOBAL.</h1><p class="tagline">Tells the story of the origin (Morocco) and the destination (Global) in one short, massive sentence.</p>',
+      headline: '<h1 class="main-title">ROOTED.<br>GLOBAL.</h1><p class="tagline">Tells the story of the origin (Morocco) and the destination (Global) in one short, massive sentence.</p>',
       title: "Our Heart <br>is in the South.",
       description:
         "Based in the fertile plains of Larache, we connect Morocco's agricultural heritage with the global demand for excellence.",
@@ -158,7 +158,28 @@ export const ui = {
           title: "Quality Control",
         },
       ],
-      section_title:"Find Us in the<br>Fields",
+      section_title: "Find Us in the<br>Fields",
+    },
+    // European Gateway
+    "european_gateway": {
+      morocco: {
+        hub: "MOROCCO Hub",
+        title: "The Heart of the <i>Harvest</i>.",
+        description:
+          "Everything begins in Larache. Our production headquarters ensures that every fruit is hand-picked and prepped for its global journey.",
+      },
+
+      spain: {
+        hub: "MADRID Hub",
+        title: "The Gateway <br>to <i>Europe</i>.",
+        description:
+          "Strategically located in Spain, Chetouan Export Import serves as our logistical nexus, ensuring the cold-chain bridge remains unbroken across the continent.",
+      },
+
+      logo: {
+        src: "/assets/images/chetouan-logo.jpg",
+        alt: "Chetouan Export Import Spain",
+      },
     },
   },
   es: {
@@ -284,7 +305,7 @@ export const ui = {
     },
     // Contact Page
     "contact": {
-    headline: '<h1 class="main-title">ACCESO<br>DIRECTO</h1><p class="tagline">El puente Chetouan entre la tierra y tu mercado.</p>',
+      headline: '<h1 class="main-title">ACCESO<br>DIRECTO</h1><p class="tagline">El puente Chetouan entre la tierra y tu mercado.</p>',
       title: "Nuestro corazón <br>está en el sur.",
       description:
         "Ubicados en las fértiles llanuras de Larache, conectamos la herencia agrícola de Marruecos con la demanda global de excelencia.",
@@ -312,7 +333,28 @@ export const ui = {
           title: "Control de Calidad",
         },
       ],
-      section_title:"Encuéntranos en los<br>Campos",
+      section_title: "Encuéntranos en los<br>Campos",
+    },
+    // European Gateway
+    "european_gateway": {
+      morocco: {
+        hub: "Hub de Marruecos",
+        title: "El corazón de la <i>cosecha</i>.",
+        description:
+          "Todo comienza en Larache. Nuestra sede de producción garantiza que cada fruta sea recolectada y preparada para su viaje global.",
+      },
+
+      spain: {
+        hub: "Hub de Madrid",
+        title: "La puerta de entrada <br>a <i>Europa</i>.",
+        description:
+          "Ubicada estratégicamente en España, Chetouan Export Import actúa como nuestro centro logístico, asegurando una cadena de frío ininterrumpida en toda Europa.",
+      },
+
+      logo: {
+        src: "/assets/images/chetouan-logo.jpg",
+        alt: "Chetouan Export Import España",
+      },
     },
   },
 } as const;

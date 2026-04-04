@@ -8,6 +8,7 @@ import ProductsDisplay from "../../components/products-display.astro";
 import Certifications from "../../components/home/certifications.astro";
 import CTA from "../../components/home/cta.astro";
 import Layout from "../../layouts/Layout.astro";
+import EuropeanGateway from "../../components/home/european-gateway.astro";
 
 import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
 
@@ -40,6 +41,7 @@ const t = useTranslations(lang);
     <ProductsDisplay lang={lang} t={t} />
     <br />
     <br />
+    <EuropeanGateway lang={lang} t={t} />
     <SectionTitle
         title={t("certifications.headline")}
         subtitle={t("certifications.text")}
