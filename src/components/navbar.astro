@@ -169,21 +169,21 @@ const pathname = new URL(Astro.url).pathname;
             </li>
 
             <li
-                class={`nav-item ${pathname === l("/about-us") ? "active" : ""}`}
+                class={`nav-item ${pathname === l("/about-us/") ? "active" : ""}`}
                 onclick={l("/about-us")}
             >
                 <a href={l("/about-us")}>{t("nav.about")}</a>
             </li>
 
             <li
-                class={`nav-item ${pathname === l("/products") ? "active" : ""}`}
+                class={`nav-item ${pathname === l("/products/") ? "active" : ""}`}
                 onclick={l("/products")}
             >
                 <a href={l("/products")}>{t("nav.products")}</a>
             </li>
 
             <li
-                class={`nav-item ${pathname === l("/contact-us") ? "active" : ""}`}
+                class={`nav-item ${pathname === l("/contact-us/") ? "active" : ""}`}
                 onclick={l("/contact-us")}
             >
                 <a href={l("/contact-us")}>{t("nav.contact")}</a>
@@ -192,33 +192,33 @@ const pathname = new URL(Astro.url).pathname;
 
         <div class="black-mask" id="mobileMask">
             <ul class="nav-list">
-                <li
-                    class={`nav-item ${pathname === l("/") ? "active" : ""}`}
-                    onclick={l("/")}
-                >
-                    <a href={l("/")}>{t("nav.home")}</a>
-                </li>
+               <li
+                class={`nav-item ${pathname === l("/") ? "active" : ""}`}
+                onclick={l("/")}
+            >
+                <a href={l("/")}>{t("nav.home")}</a>
+            </li>
 
-                <li
-                    class={`nav-item ${pathname === l("/about-us") ? "active" : ""}`}
-                    onclick={l("/about-us")}
-                >
-                    <a href={l("/about-us")}>{t("nav.about")}</a>
-                </li>
+            <li
+                class={`nav-item ${pathname === l("/about-us/") ? "active" : ""}`}
+                onclick={l("/about-us")}
+            >
+                <a href={l("/about-us")}>{t("nav.about")}</a>
+            </li>
 
-                <li
-                    class={`nav-item ${pathname === l("/products") ? "active" : ""}`}
-                    onclick={l("/products")}
-                >
-                    <a href={l("/products")}>{t("nav.products")}</a>
-                </li>
+            <li
+                class={`nav-item ${pathname === l("/products/") ? "active" : ""}`}
+                onclick={l("/products")}
+            >
+                <a href={l("/products")}>{t("nav.products")}</a>
+            </li>
 
-                <li
-                    class={`nav-item ${pathname === l("/contact-us") ? "active" : ""}`}
-                    onclick={l("/contact-us")}
-                >
-                    <a href={l("/contact-us")}>{t("nav.contact")}</a>
-                </li>
+            <li
+                class={`nav-item ${pathname === l("/contact-us/") ? "active" : ""}`}
+                onclick={l("/contact-us")}
+            >
+                <a href={l("/contact-us")}>{t("nav.contact")}</a>
+            </li>
             </ul>
         </div>
     </div>
