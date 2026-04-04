@@ -6,6 +6,7 @@ import Footer from "../../../components/footer.astro";
 import Layout from "../../../layouts/Layout.astro";
 import ProductDetail from "../../../components/product-detail.astro";
 import PageHeadline from "../../../components/page-headline.astro";
+import ExportJourney from "../../../components/export-journey.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -59,5 +60,7 @@ export async function getStaticPaths() {
     />
 
     <ProductDetail product={product} lang={lang} href={href} />
+    <ExportJourney />
+
     <Footer lang={lang} t={t} />
 </Layout>
