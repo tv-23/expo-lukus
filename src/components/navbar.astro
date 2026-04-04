@@ -10,6 +10,7 @@ const l = (path: string) => {
 const currentPath = Astro.url.pathname.replace(/^\/(en|es)/, "");
 const pathname = new URL(Astro.url).pathname;
 ---
+
 <svg class="svg-filters">
     <defs>
         <filter id="gooey-filter">
@@ -78,24 +79,30 @@ const pathname = new URL(Astro.url).pathname;
         </div>
 
         <ul class="nav-list white-layer">
-            <li class={`nav-item ${pathname === l("/") ? "active" : ""}`}>
+            <li
+                class={`nav-item ${pathname === l("/") ? "active" : ""}`}
+                onclick={l("/")}
+            >
                 <a href={l("/")}>{t("nav.home")}</a>
             </li>
 
             <li
                 class={`nav-item ${pathname === l("/about-us") ? "active" : ""}`}
+                onclick={l("/about-us")}
             >
                 <a href={l("/about-us")}>{t("nav.about")}</a>
             </li>
 
             <li
                 class={`nav-item ${pathname === l("/products") ? "active" : ""}`}
+                onclick={l("/products")}
             >
                 <a href={l("/products")}>{t("nav.products")}</a>
             </li>
 
             <li
                 class={`nav-item ${pathname === l("/contact-us") ? "active" : ""}`}
+                onclick={l("/contact-us")}
             >
                 <a href={l("/contact-us")}>{t("nav.contact")}</a>
             </li>
@@ -103,24 +110,30 @@ const pathname = new URL(Astro.url).pathname;
 
         <div class="black-mask" id="desktopMask">
             <ul class="nav-list">
-                <li class={`nav-item ${pathname === l("/") ? "active" : ""}`}>
+                <li
+                    class={`nav-item ${pathname === l("/") ? "active" : ""}`}
+                    onclick={l("/")}
+                >
                     <a href={l("/")}>{t("nav.home")}</a>
                 </li>
 
                 <li
                     class={`nav-item ${pathname === l("/about-us") ? "active" : ""}`}
+                    onclick={l("/about-us")}
                 >
                     <a href={l("/about-us")}>{t("nav.about")}</a>
                 </li>
 
                 <li
                     class={`nav-item ${pathname === l("/products") ? "active" : ""}`}
+                    onclick={l("/products")}
                 >
                     <a href={l("/products")}>{t("nav.products")}</a>
                 </li>
 
                 <li
                     class={`nav-item ${pathname === l("/contact-us") ? "active" : ""}`}
+                    onclick={l("/contact-us")}
                 >
                     <a href={l("/contact-us")}>{t("nav.contact")}</a>
                 </li>
@@ -130,7 +143,7 @@ const pathname = new URL(Astro.url).pathname;
 
     <!-- 3. New Right Column for CTA and Burger -->
     <div class="header-right">
-       <a href={l("/contact-us")} class="cta-button-nav">{t("nav.cta")}</a>
+        <a href={l("/contact-us")} class="cta-button-nav">{t("nav.cta")}</a>
 
         <div class="burger" id="burger">
             <div class="line"></div>
@@ -148,24 +161,30 @@ const pathname = new URL(Astro.url).pathname;
         </div>
 
         <ul class="nav-list white-layer">
-            <li class={`nav-item ${pathname === l("/") ? "active" : ""}`}>
+            <li
+                class={`nav-item ${pathname === l("/") ? "active" : ""}`}
+                onclick={l("/")}
+            >
                 <a href={l("/")}>{t("nav.home")}</a>
             </li>
 
             <li
                 class={`nav-item ${pathname === l("/about-us") ? "active" : ""}`}
+                onclick={l("/about-us")}
             >
                 <a href={l("/about-us")}>{t("nav.about")}</a>
             </li>
 
             <li
                 class={`nav-item ${pathname === l("/products") ? "active" : ""}`}
+                onclick={l("/products")}
             >
                 <a href={l("/products")}>{t("nav.products")}</a>
             </li>
 
             <li
                 class={`nav-item ${pathname === l("/contact-us") ? "active" : ""}`}
+                onclick={l("/contact-us")}
             >
                 <a href={l("/contact-us")}>{t("nav.contact")}</a>
             </li>
@@ -173,24 +192,30 @@ const pathname = new URL(Astro.url).pathname;
 
         <div class="black-mask" id="mobileMask">
             <ul class="nav-list">
-                <li class={`nav-item ${pathname === l("/") ? "active" : ""}`}>
+                <li
+                    class={`nav-item ${pathname === l("/") ? "active" : ""}`}
+                    onclick={l("/")}
+                >
                     <a href={l("/")}>{t("nav.home")}</a>
                 </li>
 
                 <li
                     class={`nav-item ${pathname === l("/about-us") ? "active" : ""}`}
+                    onclick={l("/about-us")}
                 >
                     <a href={l("/about-us")}>{t("nav.about")}</a>
                 </li>
 
                 <li
                     class={`nav-item ${pathname === l("/products") ? "active" : ""}`}
+                    onclick={l("/products")}
                 >
                     <a href={l("/products")}>{t("nav.products")}</a>
                 </li>
 
                 <li
                     class={`nav-item ${pathname === l("/contact-us") ? "active" : ""}`}
+                    onclick={l("/contact-us")}
                 >
                     <a href={l("/contact-us")}>{t("nav.contact")}</a>
                 </li>
