@@ -46,8 +46,8 @@
 }
 
 .larache-info h2 {
-    font-family: var(--font-main);
-    font-size: 50px;
+    font-family: var(--font-headings);
+    font-size: var(--font-size-heading);
     color: var(--primary);
     margin: 0 0 20px 0;
 }

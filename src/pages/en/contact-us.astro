@@ -1,12 +1,12 @@
 ---
-import "../../public/assets/style/contact-page.css";
-import Navbar from "../components/navbar.astro";
-import Footer from "../components/footer.astro";
-import Layout from "../layouts/Layout.astro";
-import SectionTitle from "../components/section-title.astro";
-import PageHeadline from "../components/page-headline.astro";
+import "../../../public/assets/style/contact-page.css";
+import Navbar from "../../components/navbar.astro";
+import Footer from "../../components/footer.astro";
+import Layout from "../../layouts/Layout.astro";
+import SectionTitle from "../../components/section-title.astro";
+import PageHeadline from "../../components/page-headline.astro";
 
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

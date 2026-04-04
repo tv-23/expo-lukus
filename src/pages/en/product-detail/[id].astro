@@ -1,11 +1,11 @@
 ---
-import { productDetails } from "../../../data/productDetails";
-import { getLangFromUrl, useTranslations } from "../../../i18n/utils";
-import Navbar from "../../components/navbar.astro";
-import Footer from "../../components/footer.astro";
-import Layout from "../../layouts/Layout.astro";
-import ProductDetail from "../../components/product-detail.astro";
-import PageHeadline from "../../components/page-headline.astro";
+import { productDetails } from "../../../../data/productDetails";
+import { getLangFromUrl, useTranslations } from "../../../../i18n/utils";
+import Navbar from "../../../components/navbar.astro";
+import Footer from "../../../components/footer.astro";
+import Layout from "../../../layouts/Layout.astro";
+import ProductDetail from "../../../components/product-detail.astro";
+import PageHeadline from "../../../components/page-headline.astro";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);

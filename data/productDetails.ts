@@ -1,3 +1,20 @@
+const standardPackaging = [
+  {
+    weight: "Standard",
+    detail: {
+      en: "Boxes per layer: 12",
+      es: "Cajas por capa: 12",
+    },
+  },
+  {
+    weight: "Layers",
+    detail: {
+      en: "8 to 10 layers",
+      es: "8 a 10 capas",
+    },
+  },
+];
+
 export const productDetails = {
   mint: {
     title: {
@@ -134,4 +151,132 @@ export const productDetails = {
       },
     },
   },
+  potato: {
+    title: { en: "Potato", es: "Patata" },
+    category: { en: "Fresh Vegetables", es: "Verduras Frescas" },
+    image: "/assets/images/products/Potato.webp",
+    backgroundimage: "",
+    description: { en: "", es: "" },
+    packaging: standardPackaging,
+    headline: {
+      title: { en: "FRESH<br>POTATO", es: "PATATA<br>FRESCA" },
+      subtitle: {
+        en: "Reliable export-grade potatoes for global supply.",
+        es: "Patatas de calidad de exportación para suministro global.",
+      },
+    },
+  },
+
+  tomato: {
+    title: { en: "Tomato", es: "Tomate" },
+    category: { en: "Fresh Vegetables", es: "Verduras Frescas" },
+    image: "/assets/images/products/tomato.webp",
+    backgroundimage: "",
+    description: { en: "", es: "" },
+    packaging: standardPackaging,
+    headline: {
+      title: { en: "FRESH<br>TOMATO", es: "TOMATE<br>FRESCO" },
+      subtitle: {
+        en: "Export-quality tomatoes with rich flavor and consistency.",
+        es: "Tomates de calidad de exportación con sabor y consistencia.",
+      },
+    },
+  },
+
+  onion: {
+    title: { en: "Onion", es: "Cebolla" },
+    category: { en: "Fresh Vegetables", es: "Verduras Frescas" },
+    image: "/assets/images/products/Onion.png",
+    backgroundimage: "",
+    description: { en: "", es: "" },
+    packaging: standardPackaging,
+    headline: {
+      title: { en: "FRESH<br>ONION", es: "CEBOLLA<br>FRESCA" },
+      subtitle: {
+        en: "Carefully sorted onions ready for international markets.",
+        es: "Cebollas cuidadosamente seleccionadas para mercados internacionales.",
+      },
+    },
+  },
+
+  blueberry: {
+    title: { en: "Blueberry", es: "Arándano" },
+    category: { en: "Fresh Fruits", es: "Frutas Frescas" },
+    image: "/assets/images/products/Blueberry.webp",
+    backgroundimage: "",
+    description: { en: "", es: "" },
+    packaging: standardPackaging,
+    headline: {
+      title: { en: "FRESH<br>BLUEBERRY", es: "ARÁNDANO<br>FRESCO" },
+      subtitle: {
+        en: "Premium blueberries packed for global freshness.",
+        es: "Arándanos premium empaquetados para frescura global.",
+      },
+    },
+  },
+
+  strawberry: {
+    title: { en: "Strawberry", es: "Fresa" },
+    category: { en: "Fresh Fruits", es: "Frutas Frescas" },
+    image: "/assets/images/products/strawberry.webp",
+    backgroundimage: "",
+    description: { en: "", es: "" },
+    packaging: standardPackaging,
+    headline: {
+      title: { en: "FRESH<br>STRAWBERRY", es: "FRESA<br>FRESCA" },
+      subtitle: {
+        en: "Sweet strawberries with premium export quality.",
+        es: "Fresas dulces con calidad premium de exportación.",
+      },
+    },
+  },
+
+  avocado: {
+    title: { en: "Avocado", es: "Aguacate" },
+    category: { en: "Fresh Fruits", es: "Frutas Frescas" },
+    image: "/assets/images/products/Avocado.png",
+    backgroundimage: "",
+    description: { en: "", es: "" },
+    packaging: standardPackaging,
+    headline: {
+      title: { en: "FRESH<br>AVOCADO", es: "AGUACATE<br>FRESCO" },
+      subtitle: {
+        en: "Carefully selected avocados ready for export.",
+        es: "Aguacates cuidadosamente seleccionados listos para exportación.",
+      },
+    },
+  },
+
+  raspberry: {
+    title: { en: "Raspberry", es: "Frambuesa" },
+    category: { en: "Fresh Fruits", es: "Frutas Frescas" },
+    image: "/assets/images/products/Raspberry.webp",
+    backgroundimage: "",
+    description: { en: "", es: "" },
+    packaging: standardPackaging,
+    headline: {
+      title: { en: "FRESH<br>RASPBERRY", es: "FRAMBUESA<br>FRESCA" },
+      subtitle: {
+        en: "Delicate raspberries handled with premium care.",
+        es: "Frambuesas delicadas tratadas con cuidado premium.",
+      },
+    },
+  },
+
+  blackberry: {
+    title: { en: "Blackberry", es: "Mora" },
+    category: { en: "Fresh Fruits", es: "Frutas Frescas" },
+    image: "/assets/images/products/Blackberry.png",
+    backgroundimage: "",
+    description: { en: "", es: "" },
+    packaging: standardPackaging,
+    headline: {
+      title: { en: "FRESH<br>BLACKBERRY", es: "MORA<br>FRESCA" },
+      subtitle: {
+        en: "Premium blackberries for global distribution.",
+        es: "Moras premium para distribución global.",
+      },
+    },
+  },
 };
+
